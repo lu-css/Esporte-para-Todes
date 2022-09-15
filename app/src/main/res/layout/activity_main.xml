@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2a2a2a"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnequipes"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginBottom="44dp"
+        android:onClick="telaEquipes"
+        android:text="@string/equipes"
+        app:layout_constraintBottom_toTopOf="@+id/btnmodalidades"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnmodalidades"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="192dp"
+        android:onClick="telaModalidades"
+        android:text="@string/modalidades"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnequipes" />
+
+    <Button
+        android:id="@+id/btncampeonatos"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="44dp"
+        android:background="#ffffff"
+        android:onClick="telaCampeonatos"
+        android:text="@string/campeonatos"
+        app:layout_constraintBottom_toTopOf="@+id/btnestatisticas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnequipes"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnestatisticas"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="192dp"
+        android:onClick="telaEstatisticas"
+        android:text="@string/estatisticas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnmodalidades"
+        app:layout_constraintTop_toBottomOf="@+id/btncampeonatos" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

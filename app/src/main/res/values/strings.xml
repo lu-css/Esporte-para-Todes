@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Esporte Para Todes</string>
+    <string name="app_name2">Equipes</string>
+    <string name="app_name3">Campeonatos</string>
+    <string name="app_name4">Modalidades</string>
+    <string name="app_name5">Estatísticas</string>
+    <string name="equipes">EQUIPES</string>
+    <string name="campeonatos">CAMPEONATOS</string>
+    <string name="modalidades">MODALIDADES</string>
+    <string name="estatisticas">ESTATÍSTICAS</string>
+
+
+</resources>
