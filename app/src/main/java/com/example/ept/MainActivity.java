@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void telaEquipes(View view) {
-
         Intent intent = new Intent(this, Equipes.class);
         startActivity(intent);
     }
@@ -36,4 +35,5 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Estatisticas.class);
         startActivity(intent);
     }
+
 }

@@ -8,6 +8,13 @@
     <string name="campeonatos">CAMPEONATOS</string>
     <string name="modalidades">MODALIDADES</string>
     <string name="estatisticas">ESTATÍSTICAS</string>
+    <string name="formatadores">FORMATADORES</string>
+    <string name="futebol">FUTSAL</string>
+    <string name="volei">VÔLEI</string>
+    <string name="basquete">BASQUETE</string>
+    <string name="queimada">QUEIMADA</string>
+    <string name="handebol">HANDEBOL</string>
+    <string name="descricaoformatadores">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum dolor ut ante blandit tempus. Curabitur eget mi non orci elementum auctor. Nunc malesuada est ut luctus aliquet. Pellentesque mollis ultricies massa eget rhoncus. Nam varius, ante in sagittis sollicitudin, nunc massa posuere dolor, eu volutpat turpis risus vitae nisi.</string>
 
 
 </resources>

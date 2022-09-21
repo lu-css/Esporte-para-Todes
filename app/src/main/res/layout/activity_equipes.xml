@@ -8,34 +8,65 @@
     tools:context=".Equipes">
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="109dp"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="233dp"
-        tools:layout_editor_absoluteY="109dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:id="@+id/imageButton5"
+        android:layout_width="153dp"
+        android:layout_height="153dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/black_500"
+        android:onClick="telaFormatadores"
+        android:scaleType="centerInside"
+        android:src="@drawable/formatadores_"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="371dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_width="153dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="170dp"
+        android:onClick="telaMecapeta"
+        android:src="@android:drawable/btn_dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="233dp"
-        tools:layout_editor_absoluteY="371dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:id="@+id/imageButton"
+        android:layout_width="153dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="368dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="214dp"
+        android:onClick="telaJogostosos"
+        android:src="@android:drawable/btn_dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="153dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="telaDST"
+        android:src="@drawable/dst_"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

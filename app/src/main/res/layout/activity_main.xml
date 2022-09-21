@@ -41,7 +41,6 @@
         android:layout_marginTop="156dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="44dp"
-        android:background="#ffffff"
         android:onClick="telaCampeonatos"
         android:text="@string/campeonatos"
         app:layout_constraintBottom_toTopOf="@+id/btnestatisticas"
