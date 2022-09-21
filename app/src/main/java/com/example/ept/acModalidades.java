@@ -3,35 +3,31 @@ package com.example.ept;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.hardware.Sensor;
-import android.hardware.SensorManager;
 import android.net.Uri;
 import android.os.Bundle;
-import android.view.View;
 
+public class acModalidades extends AppCompatActivity {
 
-public class Modalidades extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_modalidades);
-
+        setContentView(R.layout.activity_ac_modalidades);
     }
 
-    public void futsal(View view){
+    public void futsal(){
         gotoLink(getResources().getString(R.string.link_futsal));
     }
 
-    public void voileibol(View view){
+    public void voileibol(){
         gotoLink(getResources().getString(R.string.link_voileibol));
     }
-    public void basquetebol(View view){
+    public void basquetebol(){
         gotoLink(getResources().getString(R.string.link_basquetebol));
     }
-    public void queimada(View view){
+    public void queimada(){
         gotoLink(getResources().getString(R.string.link_queimada));
     }
-    public void handbol(View view){
+    public void handbol(){
         gotoLink(getResources().getString(R.string.link_handbol));
     }
     private void gotoLink(String link){
@@ -40,5 +36,4 @@ public class Modalidades extends AppCompatActivity {
         startActivity(Intent.createChooser(it, getString(R.string.chNavegador)));
 
     }
-
 }

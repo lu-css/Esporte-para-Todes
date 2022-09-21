@@ -1,4 +1,5 @@
 <resources>
+    <string name="chNavegador">Escolha</string>
     <string name="app_name">Esporte Para Todes</string>
     <string name="app_name2">Equipes</string>
     <string name="app_name3">Campeonatos</string>
@@ -9,12 +10,23 @@
     <string name="modalidades">MODALIDADES</string>
     <string name="estatisticas">ESTATÍSTICAS</string>
     <string name="formatadores">FORMATADORES</string>
-    <string name="futebol">FUTSAL</string>
-    <string name="volei">VÔLEI</string>
-    <string name="basquete">BASQUETE</string>
+    <string name="descricaoformatadores">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum dolor ut ante blandit tempus. Curabitur eget mi non orci elementum auctor. Nunc malesuada est ut luctus aliquet. Pellentesque mollis ultricies massa eget rhoncus. Nam varius, ante in sagittis sollicitudin, nunc massa posuere dolor, eu volutpat turpis risus vitae nisi.</string>
+    <string name="dst">DST</string>
+    <string name="des_cdst">Descrição da DST</string>
+    <string name="jogostosos">JOGOSTOSOS</string>
+    <string name="desc_jogostosos">Descrição do Jogostosos</string>
+    <string name="mecapeta">MECAPETA</string>
+    <string name="desc_mecapeta">Descrição do Mecapeta</string>
+    <string name="link_futsal">https://google.com</string>
+    <string name="link_voileibol">https://google.com</string>
+    <string name="link_basquetebol">https://google.com</string>
+    <string name="link_queimada">https://google.com</string>
+    <string name="link_handbol">https://google.com</string>
+    <string name="futsal">FUTSAL</string>
+    <string name="voileibol">VOLEIBOL</string>
+    <string name="basquetebol">BASQUETEBOL</string>
     <string name="queimada">QUEIMADA</string>
     <string name="handebol">HANDEBOL</string>
-    <string name="descricaoformatadores">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum dolor ut ante blandit tempus. Curabitur eget mi non orci elementum auctor. Nunc malesuada est ut luctus aliquet. Pellentesque mollis ultricies massa eget rhoncus. Nam varius, ante in sagittis sollicitudin, nunc massa posuere dolor, eu volutpat turpis risus vitae nisi.</string>
 
 
 </resources>
