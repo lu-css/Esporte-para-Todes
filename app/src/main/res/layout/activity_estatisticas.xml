@@ -7,4 +7,12 @@
     android:background="#2a2a2a"
     tools:context=".Estatisticas">
 
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="mostrarMapa"
+        android:text="Button"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="195dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

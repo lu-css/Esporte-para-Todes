@@ -30,12 +30,12 @@ public class EquipeFormatadores extends AppCompatActivity {
 //        TextView txtName = (TextView) this.findViewById(R.id.nomeEquipe);
 
         String[][] equipesInfos = {
-                {getResources().getString(R.string.formatadores), getResources().getString(R.string.descricaoformatadores), String.valueOf(R.drawable.formatadores), String.valueOf(R.drawable.camisa_formatadores)},
-                {getResources().getString(R.string.dst), getResources().getString(R.string.des_cdst), String.valueOf(R.drawable.dst_), String.valueOf(R.drawable.camisa_dst)},
+                {getResources().getString(R.string.formatadores), getResources().getString(R.string.descricaoformatadores), String.valueOf(R.drawable.logo_formatadores), String.valueOf(R.drawable.camisa_formatadores)},
+                {getResources().getString(R.string.dst), getResources().getString(R.string.des_cdst), String.valueOf(R.drawable.logo_dst), String.valueOf(R.drawable.camisa_dst)},
                 // Alterar os "R.drawable.formatadores" para o nome correto da imagem do Jogostosos
-                {getResources().getString(R.string.jogostosos), getResources().getString(R.string.desc_jogostosos), String.valueOf(R.drawable.formatadores), String.valueOf(R.drawable.camisa_jogostosos)},
+                {getResources().getString(R.string.jogostosos), getResources().getString(R.string.desc_jogostosos), String.valueOf(R.drawable.logo_jogostosos), String.valueOf(R.drawable.camisa_jogostosos)},
                 // Alterar os "R.drawable.formatadores" para o nome correto da imagem do Mecapeta
-                {getResources().getString(R.string.mecapeta), getResources().getString(R.string.desc_mecapeta), String.valueOf(R.drawable.formatadores), String.valueOf(R.drawable.camisa_mecapeta)}
+                {getResources().getString(R.string.mecapeta), getResources().getString(R.string.desc_mecapeta), String.valueOf(R.drawable.logo_mecapeta), String.valueOf(R.drawable.camisa_mecapeta)}
         };
 
         setTitle(equipesInfos[id][0]);
