@@ -4,4 +4,4 @@
 
 #### Descrição da aplicação ####
 
-O app do Esporte Para Todes traz informações e outras funcionalidades acerca dos campeonatos esportivos da Etec Basilides de Godoy, trazendo visões acerca das equipes, regras das modalidades, chaveamentos e outros.
+O app Esporte Para Todes traz informações e outras funcionalidades acerca dos campeonatos esportivos da Etec Basilides de Godoy, trazendo visões acerca das equipes, regras das modalidades, chaveamentos e outros.
