@@ -90,6 +90,7 @@ public class Estatisticas extends AppCompatActivity implements SensorEventListen
        Intent mapIntent = new Intent(Intent.ACTION_VIEW, location);
        startActivity(mapIntent);
     }
+
 }
 
 class Localizacao implements LocationListener{
