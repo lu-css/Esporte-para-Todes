@@ -38,7 +38,7 @@ public class Modalidades extends AppCompatActivity {
         Uri uri = Uri.parse(link);
         Intent it = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(Intent.createChooser(it, getString(R.string.chNavegador)));
-
     }
+
 
 }

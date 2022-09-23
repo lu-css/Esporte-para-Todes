@@ -9,23 +9,35 @@
     <string name="campeonatos">CAMPEONATOS</string>
     <string name="modalidades">MODALIDADES</string>
     <string name="estatisticas">ESTATÍSTICAS</string>
+
     <string name="formatadores">FORMATADORES</string>
+    <string name="insta_formatadores">forMatadores</string>
     <string name="descricaoformatadores"> Formatadores é o time da sala do segundo ano do curso de Desenvolvimento de Sistemas, criado em 2021, conta com um dragão como mascote e suas cores são o roxo e o preto.</string>
+
     <string name="dst">DST</string>
     <string name="des_cdst"> DST é o time da sala do terceiro ano do curso de Desenvolvimento de Sistemas, criado em 2022, conta com uma cobra como mascote e suas cores são o verde e o preto</string>
+    <string name="insta_dst">dst_3ds</string>
+
     <string name="jogostosos">JOGOSTOSOS</string>
     <string name="desc_jogostosos">Jogostosos é o time da sala do segundo ano do curso Jogos Digitais, criado em 2022, conta com o personagem Tails como mascote e suas cores são o laranja, o branco e o preto. </string>
+    <string name="insta_jogostosos">jogostosos</string>
+
     <string name="mecapeta">MECAPETA</string>
     <string name="desc_mecapeta">Mecapeta é o time da sala do terceiro ano A do curso de Mecatrônica, criado em 2020, conta com o personagem Pato Donald como mascote e suas cores são o vermelho e o preto.</string>
+    <string name="insta_mecapeta">mecapetaofc</string>
+
     <string name="futsal">FUTSAL</string>
     <string name="voileibol">VOLEIBOL</string>
     <string name="basquetebol">BASQUETEBOL</string>
     <string name="queimada">QUEIMADA</string>
     <string name="handebol">HANDEBOL</string>
+
     <string name="VerMapa">Ver no mapa</string>
     <string name="VerEquipe">Ver Equipe</string>
     <string name="Descricaoestatisticas">O campeonato Esporte para Todos (EPT) teve início no ano de 2022 sob coordenação do Prof. Ubirajara Feldmann</string>
     <string name="DecricaoEtec">O campeonato é realizado na Etec Basilides de Godoy</string>
     <string name="DecricaoCampeao">A primeira e atual campeã, é a equipe do DST (3°DS)</string>
     <string name="DecricaoTorcida">Agite o celular e teste sua força</string>
+
+    <string name="instagram">Instagram</string>
 </resources>

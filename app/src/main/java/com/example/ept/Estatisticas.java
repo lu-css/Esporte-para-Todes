@@ -6,8 +6,10 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.motion.widget.Debug;
 import androidx.core.app.ActivityCompat;
+import androidx.fragment.app.DialogFragment;
 
 import android.Manifest;
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.hardware.Sensor;
@@ -24,9 +26,10 @@ import android.view.View;
 
 import java.util.List;
 
-public class Estatisticas extends AppCompatActivity implements SensorEventListener {
+public class Estatisticas extends AppCompatActivity implements SensorEventListener{
 
     private final String PREFERENCIAS_NAME = "com.example.andro.apt";
+    public final static String EXTRA_MESSAGE = ".MESSAGE";
 
     private SensorManager sensorManager;
     private Sensor acelerometro;
@@ -67,30 +70,25 @@ public class Estatisticas extends AppCompatActivity implements SensorEventListen
             ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, 1);
             ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
             ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.ACCESS_NETWORK_STATE}, 1);
+//            mostrarMapa(null);
             return;
         }
 
         LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-        LocationListener locationListener= new Localizacao();
+        LocationListener locationListener = new Localizacao();
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
+        Log.v("geo", String.valueOf(Localizacao.latitude));
     }
     public void mostrarMapa(View view){
-        double latitude = -23.562549, longitude = -45.655127;
-       Uri location = Uri.parse("geo:" + String.valueOf(latitude) + "," + String.valueOf(longitude) + "?z=14");
+        double latitude = -26.05207814, longitude = -46.7280628;
+       Uri location = Uri.parse("geo:" + String.valueOf(latitude) + "," + String.valueOf(longitude));
        Intent mapIntent = new Intent(Intent.ACTION_VIEW, location);
        startActivity(mapIntent);
     }
-
-}
-
-class Localizacao implements LocationListener{
-    public static double latitude,
-            longitude;
-
-    @Override
-    public void onLocationChanged(@NonNull Location location) {
-        latitude = location.getLatitude();
-        longitude = location.getLongitude();
-
+    public void equipeDetaque(View view){
+        Intent intent = new Intent(this, EquipeFormatadores.class);
+        intent.putExtra(EXTRA_MESSAGE, 1);
+        startActivity(intent);
     }
+
 }

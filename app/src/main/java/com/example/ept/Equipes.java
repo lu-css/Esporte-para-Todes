@@ -31,7 +31,7 @@ public class Equipes extends AppCompatActivity {
         telaTime(3);
     }
     private void telaTime(int idTime){
-        Intent intent = new Intent(this, EquipeFormatadores.class);
+       Intent intent = new Intent(this, EquipeFormatadores.class);
         intent.putExtra(EXTRA_MESSAGE, idTime);
         startActivity(intent);
     }

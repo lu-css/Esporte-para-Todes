@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2a2a2a"
+    android:onClick="mostrarLocal"
     tools:context=".Estatisticas">
 
     <Button
@@ -13,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="29dp"
         android:layout_marginEnd="244dp"
-        android:onClick="mostrarMapa"
+        android:onClick="mostrarLocal"
         android:text="@string/VerMapa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,7 +78,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="260dp"
         android:layout_marginBottom="220dp"
-        android:onClick="telaDST"
+        android:onClick="equipeDetaque"
         android:text="@string/VerEquipe"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
