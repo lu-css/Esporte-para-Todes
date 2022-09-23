@@ -60,7 +60,7 @@ public class Estatisticas extends AppCompatActivity implements SensorEventListen
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) { }
 
-    public void mostrarLocal(View view){
+    public void viewCurrentLocation(View view){
         if(ActivityCompat.checkSelfPermission(
                 this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
                 &&
@@ -70,7 +70,6 @@ public class Estatisticas extends AppCompatActivity implements SensorEventListen
             ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, 1);
             ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
             ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.ACCESS_NETWORK_STATE}, 1);
-//            mostrarMapa(null);
             return;
         }
 
@@ -78,13 +77,20 @@ public class Estatisticas extends AppCompatActivity implements SensorEventListen
         LocationListener locationListener = new Localizacao();
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
         Log.v("geo", String.valueOf(Localizacao.latitude));
+        openGoogleMaps(Localizacao.latitude, Localizacao.longitude);
     }
-    public void mostrarMapa(View view){
+    public void mostrarQuadra(View view){
         double latitude = -26.05207814, longitude = -46.7280628;
-       Uri location = Uri.parse("geo:" + String.valueOf(latitude) + "," + String.valueOf(longitude));
-       Intent mapIntent = new Intent(Intent.ACTION_VIEW, location);
-       startActivity(mapIntent);
+        openGoogleMaps(latitude, longitude);
     }
+
+    private void openGoogleMaps(double lat, double lon){
+        Uri location = Uri.parse("geo:" + String.valueOf(lat) + "," + String.valueOf(lon));
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW, location);
+        startActivity(mapIntent);
+
+    }
+
     public void equipeDetaque(View view){
         Intent intent = new Intent(this, EquipeFormatadores.class);
         intent.putExtra(EXTRA_MESSAGE, 1);
