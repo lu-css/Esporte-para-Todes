@@ -31,16 +31,6 @@ public class Estatisticas extends AppCompatActivity implements SensorEventListen
     private SensorManager sensorManager;
     private Sensor acelerometro;
 
-//    private ActivityResultLauncher<String> resultLauncher =
-//            registerForActivityResult(new ActivityResultContracts.RequestPermission(), isGrant -> {
-//                if(isGrant){
-//                    Log.v("permisao", "POSSUI");
-//                }
-//                else{
-//                    Log.v("permisao", "NÂO TEM");
-//                }
-//            });
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
